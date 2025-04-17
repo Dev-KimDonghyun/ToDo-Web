@@ -6,7 +6,7 @@ const MainPage = () => {
     const [ test, setTest ] = useState<string>('');
 
     useEffect(() => {
-        localStorage.setItem('DevKim', '테스트 값');
+        // localStorage.setItem('DevKim', '테스트 값');
         const storageValue: string | null = localStorage.getItem('DevKim');
         console.log('첫번째 console.log', storageValue);
         if (storageValue !== null) {

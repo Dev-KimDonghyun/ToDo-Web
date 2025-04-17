@@ -1,32 +1,14 @@
-import { createBrowserRouter } from 'react-router-dom';
-import { RouterProvider } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import DoInput from './components/DoInput';
+import DoList from './components/DoList';
 
-import MainPage from './pages/MainPage';
-
-function LayOut () {
+function App () {
   return (
-    <>
-    <Outlet />
-    </>
+    <div>
+      <h1>테스트</h1>
+      <DoInput />
+      <DoList />
+    </div>
   );
-}
-
-const router = createBrowserRouter ([
-  {
-    path: '/',
-    element: <LayOut />,
-    children: [
-      {
-        index: true,
-        element: <MainPage />
-      }
-    ]
-  }
-]);
-
-function App() {
-  return <RouterProvider router={router} />
 }
 
 export default App;

@@ -4,9 +4,11 @@ import DoList from './components/DoList';
 function App () {
   return (
     <div>
-      <h1>테스트</h1>
-      <DoInput />
-      <DoList />
+      <div>
+        <h1>테스트</h1>
+        <DoInput />
+        <DoList />
+      </div>
     </div>
   );
 }
